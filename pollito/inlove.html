@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazón</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #951fcc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-image 1s ease;
+            background-image: cover;
+            background-repeat: no-repeat;
+        }
+
+        #corazon {
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+            font-size: 6rem;
+            color: #861faf;
+        }
+
+        #mensaje {
+            display: none;
+            font-size: 2rem;
+            margin-top: 20px;
+            color: #b927b9;
+            background-color: #79229b80;
+            color: white;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body onclick="cambiarFondo()">
+    <div id="corazon" onclick="mostrarMensaje()">❤️</div>
+    <div class="container" id="mensaje">Bueno BBY decirte que estoy muy inlove contigo,tanto que buff se acerca a la palabra que da miedo, te quiero muchisimo y cada vez me doy cuenta que eres esencial para mi, que te quiero con toda mi alma y que es amor de verdad
+        Voy a llegar a estar enamorado Mireia, y la verdad me da miedo pero llega un momento que me da tantas ganas hacer de todo contigo que lo pienso y se me quita el miedo porque consigues sacar lo mejor de mi y yo creo que me voy a arriesgar en
+        llegar a enamorarme ya que al final es lo que mas siento y siento que no tengo que tener miedo ya que contigo todo es mucho mas facil y es todo perfecto, lo hemos hecho bien desde un principio asi que yo creo que vamos a llegar a ser boofffff
+        la mejor dupla posible, porque es que madremia pollito este vinculo es unico y TEQUIERO MUCHISIMO.
+        Me haces muy feliz y por eso creo que en este punto jijiji y tu te estas acercando jijij, de verdad que he tenido una suerte en encontrarte que es flipante, no se que haria sin mi Mireia.
+        Gracias por estar ahi dia dia y por formar parte de mi vida, me ayudas muchisimo y estoy super agradecido. UN 10.
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('mensaje').style.display = 'block';
+        }
+
+        function cambiarFondo() {
+            document.body.style.backgroundImage = "url('imagenes/foto1.jpeg')"; // Ruta relativa a la imagen
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    background-color: #ffe6e6; /* Fondo color rosa claro */
+}
+
+.menu {
+    display: flex;
+    
+    align-items: center;
+    background-color: #ffb3b3; /* Fondo color rosa medio */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.menu button {
+    margin-left: 20px;
+    background-color: #ff6666; /* Color de fondo de los botones rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu button:hover {
+    background-color: #ff3333; /* Color de fondo de los botones rojo más oscuro al pasar el ratón */
+}
